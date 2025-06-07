@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Linyun Liu"/>
+    <meta name="theme-color" content="#222222">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --dark-color: #222222;
+        --light-color: #faebd7;
+        --gray: #808080;
+        --dim-gray: #606060;
+
+        --midnight-blue: #043863;
+        --indigo-blue: #3e62a4;
+        --plum-purple: #8066b9;
+        --dusty-magenta: #a05195;
+        --deep-rose: #d45087;
+        --flamingo-pink: #f95d6a;
+        --tangerine-orange: #ff7c43;
+        --pumpkin-orange: #ffa600;
+
+        --light-green: #90ee91;
+        --bright-green: #73fa79;
+        --standard-green: #28c840;
+        --bright-yellow: #fffc79;
+        --bright-salmon: #ff7e79;
+        --dark-salmon: #cd5c5d;
+        --bright-blue: #0096ff;
+        --bright-purple: #9437ff;
+        --bright-pink: #ff2f92;
+
+        --font-roboto: Roboto;
+        --font-boldonse: Boldonse;
+        --font-codystar: Codystar;
+        --font-rochester: Rochester;
+        --font-lobster: Lobster;
+        --font-caveat: Caveat;
+        --font-ptserif: "PT Serif";
+    }
+    body{
+        background: var(--light-color);
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    p{
+        margin: 0;
+    }
+    ol, ul {
+        list-style-position: inside;
+    }
+    a{
+        color: var(--bright-blue);
+    }
+    .title{
+        font-family: var(--font-lobster), sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        background: linear-gradient(60deg, var(--dusty-magenta), var(--deep-rose));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .alcyonite{
+        font-family: var(--font-roboto), sans-serif;
+        text-align: center;
+    }
+    .github{
+        font-family: var(--font-roboto), sans-serif;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: clamp(200px, 85vw, 800px);
+    }
+</style>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">Greetings from Alcyonite!</h1>
+            <p class="alcyonite">Visit out website at <a href="https://alcyonite.com">https://alcyonite.com</a></p>
+            <p class="github">Or discover our projects at <a href="https://github.com/thealcyonite">https://github.com/thealcyonite</a></p>
+        </div>
+    </main>
+</body>
+</html>
